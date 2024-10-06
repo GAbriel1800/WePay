@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>WePay</title>
+</head>
+<body>
+    <h1>Bienvenido a WePay</h1>
+
+    <div id="register">
+        <h2>Crear Cuenta</h2>
+        <input type="text" id="nombre" placeholder="Nombre">
+        <input type="email" id="correo" placeholder="Correo">
+        <button onclick="registrarUsuario()">Registrarse</button>
+    </div>
+
+    <div id="transfer">
+        <h2>Enviar Dinero</h2>
+        <input type="email" id="usuarioDestino" placeholder="Correo del destinatario">
+        <input type="number" id="monto" placeholder="Monto a enviar">
+        <button onclick="enviarDinero()">Enviar Dinero</button>
+    </div>
+
+    <div id="historial">
+        <h2>Historial de Transacciones</h2>
+        <ul id="listaTransacciones"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
